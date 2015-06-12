@@ -1,0 +1,551 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>LiftedTypesafeConfig - com.kinja.config.LiftedTypesafeConfig</title>
+          <meta name="description" content="LiftedTypesafeConfig - com.kinja.config.LiftedTypesafeConfig" />
+          <meta name="keywords" content="LiftedTypesafeConfig com.kinja.config.LiftedTypesafeConfig" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'com.kinja.config.LiftedTypesafeConfig';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="LiftedTypesafeConfig$.html" title="See companion object"><img src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.kinja">kinja</a>.<a href="package.html" class="extype" name="com.kinja.config">config</a></p>
+        <h1><a href="LiftedTypesafeConfig$.html" title="See companion object">LiftedTypesafeConfig</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="LiftedTypesafeConfig$.html" title="See companion object">object LiftedTypesafeConfig</a>
+            | <a href="package.html" class="extype" name="com.kinja.config">package config</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LiftedTypesafeConfig</span><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A wrapper around TypesafeConfig's Config that lifts Missing and WrongType errors into BootupErrors
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyVal">AnyVal</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.kinja.config.LiftedTypesafeConfig"><span>LiftedTypesafeConfig</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyVal"><span>AnyVal</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.Any###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#configAndName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="configAndName:(com.typesafe.config.Config,String)"></a>
+      <a id="configAndName:(Config,String)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">configAndName</span><span class="result">: (<span class="extype" name="com.typesafe.config.Config">Config</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@configAndName:(com.typesafe.config.Config,String)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getBoolean" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getBoolean(name:String):com.kinja.config.BootupErrors[Boolean]"></a>
+      <a id="getBoolean(String):BootupErrors[Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBoolean</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getBoolean(name:String):com.kinja.config.BootupErrors[Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a Boolean.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getBooleanList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getBooleanList(name:String):com.kinja.config.BootupErrors[List[Boolean]]"></a>
+      <a id="getBooleanList(String):BootupErrors[List[Boolean]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBooleanList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Boolean">Boolean</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getBooleanList(name:String):com.kinja.config.BootupErrors[List[Boolean]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a List of Boolean values.</p>
+    </li><li name="scala.AnyVal#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_&lt;:AnyVal]"></a>
+      <a id="getClass():Class[_&lt;:AnyVal]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.Class">Class</span>[_ &lt;: <span class="extype" name="scala.AnyVal">AnyVal</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getClass():Class[_&lt;:AnyVal]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyVal → Any</dd></dl></div>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getConfig(name:String):com.kinja.config.BootupErrors[com.kinja.config.LiftedTypesafeConfig]"></a>
+      <a id="getConfig(String):BootupErrors[LiftedTypesafeConfig]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getConfig</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<a href="" class="extype" name="com.kinja.config.LiftedTypesafeConfig">LiftedTypesafeConfig</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getConfig(name:String):com.kinja.config.BootupErrors[com.kinja.config.LiftedTypesafeConfig]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves a sub-config from the values with the given prefix.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getDouble" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getDouble(name:String):com.kinja.config.BootupErrors[Double]"></a>
+      <a id="getDouble(String):BootupErrors[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDouble</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getDouble(name:String):com.kinja.config.BootupErrors[Double]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a Double.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getDoubleList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getDoubleList(name:String):com.kinja.config.BootupErrors[List[Double]]"></a>
+      <a id="getDoubleList(String):BootupErrors[List[Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDoubleList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getDoubleList(name:String):com.kinja.config.BootupErrors[List[Double]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a List of Doubles.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getDuration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getDuration(name:String):com.kinja.config.BootupErrors[scala.concurrent.duration.Duration]"></a>
+      <a id="getDuration(String):BootupErrors[Duration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDuration</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.concurrent.duration.Duration">Duration</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getDuration(name:String):com.kinja.config.BootupErrors[scala.concurrent.duration.Duration]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a Duration.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getDurationList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getDurationList(name:String):com.kinja.config.BootupErrors[List[scala.concurrent.duration.Duration]]"></a>
+      <a id="getDurationList(String):BootupErrors[List[Duration]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDurationList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.concurrent.duration.Duration">Duration</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getDurationList(name:String):com.kinja.config.BootupErrors[List[scala.concurrent.duration.Duration]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a List of Durations.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getInt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getInt(name:String):com.kinja.config.BootupErrors[Int]"></a>
+      <a id="getInt(String):BootupErrors[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInt</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getInt(name:String):com.kinja.config.BootupErrors[Int]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as an Int.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getIntList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIntList(name:String):com.kinja.config.BootupErrors[List[Int]]"></a>
+      <a id="getIntList(String):BootupErrors[List[Int]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIntList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Int">Int</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getIntList(name:String):com.kinja.config.BootupErrors[List[Int]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a List of Ints.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getLong" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getLong(name:String):com.kinja.config.BootupErrors[Long]"></a>
+      <a id="getLong(String):BootupErrors[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLong</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.Long">Long</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getLong(name:String):com.kinja.config.BootupErrors[Long]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a Long.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getLongList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getLongList(name:String):com.kinja.config.BootupErrors[List[Long]]"></a>
+      <a id="getLongList(String):BootupErrors[List[Long]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLongList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Long">Long</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getLongList(name:String):com.kinja.config.BootupErrors[List[Long]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a List of Longs.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getObject(name:String):com.kinja.config.BootupErrors[com.typesafe.config.ConfigObject]"></a>
+      <a id="getObject(String):BootupErrors[ConfigObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getObject</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="com.typesafe.config.ConfigObject">ConfigObject</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getObject(name:String):com.kinja.config.BootupErrors[com.typesafe.config.ConfigObject]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a ConfigObject.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getObjectList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getObjectList(name:String):com.kinja.config.BootupErrors[List[com.typesafe.config.ConfigObject]]"></a>
+      <a id="getObjectList(String):BootupErrors[List[ConfigObject]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getObjectList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="com.typesafe.config.ConfigObject">ConfigObject</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getObjectList(name:String):com.kinja.config.BootupErrors[List[com.typesafe.config.ConfigObject]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a ConfigObject.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getRawConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getRawConfig(name:String):com.kinja.config.BootupErrors[com.typesafe.config.Config]"></a>
+      <a id="getRawConfig(String):BootupErrors[Config]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRawConfig</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="com.typesafe.config.Config">Config</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getRawConfig(name:String):com.kinja.config.BootupErrors[com.typesafe.config.Config]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">As <code>getConfig</code> but this returns the underyling TypesafeConfig.</p><div class="fullcomment"><div class="comment cmt"><p>As <code>getConfig</code> but this returns the underyling TypesafeConfig.
+Missing configuration values will not be correctly handled by the returned config.
+</p></div></div>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getString(name:String):com.kinja.config.BootupErrors[String]"></a>
+      <a id="getString(String):BootupErrors[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getString</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getString(name:String):com.kinja.config.BootupErrors[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a String.</p>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#getStringList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getStringList(name:String):com.kinja.config.BootupErrors[List[String]]"></a>
+      <a id="getStringList(String):BootupErrors[List[String]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getStringList</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="BootupErrors.html" class="extype" name="com.kinja.config.BootupErrors">BootupErrors</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@getStringList(name:String):com.kinja.config.BootupErrors[List[String]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Retrieves the value found at the given name as a List of Strings.</p>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.kinja.config.LiftedTypesafeConfig#underlying" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="underlying:com.typesafe.config.Config"></a>
+      <a id="underlying:Config"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">underlying</span><span class="result">: <span class="extype" name="com.typesafe.config.Config">Config</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.kinja.config.LiftedTypesafeConfig@underlying:com.typesafe.config.Config" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The underlying TypesafeConfig.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyVal">
+              <h3>Inherited from <span class="extype" name="scala.AnyVal">AnyVal</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
